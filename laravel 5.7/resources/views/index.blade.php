@@ -114,41 +114,62 @@
 
         <div class="header-s3">
             <div class="main-menu">
-                <a class="button-main" for="button_main_1" href="#">MEDICAMENTOS</a>
-                <a class="button-main" for="button_main_2" href="#">HIGIENE E BELEZA</a>
-                <a href="#">INFANTIL</a>
-                <a href="#">GERIÁTRICO</a>
-                <a href="#">SUPLEMENTOS</a>
-                <a href="#">ACESSÓRIOS</a>
-                <a href="#">CONVENIÊNCIA</a>
+                <a class="button-main" list="list-itens-1" href="#">MEDICAMENTOS</a>
+                <a class="button-main" list="list-itens-2" href="#">HIGIENE E BELEZA</a>
+                <a class="button-main" list="list-itens-3" href="#">INFANTIL</a>
+                <a class="button-main" list="list-itens-4" href="#">GERIÁTRICO</a>
+                <a class="button-main" list="list-itens-5" href="#">SUPLEMENTOS</a>
+                <a class="button-main" list="list-itens-6" href="#">ACESSÓRIOS</a>
+                <a class="button-main" list="list-itens-7" href="#">CONVENIÊNCIA</a>
 
                 <div class="menu-main-btn-offers">
                     <a href="#">OFERTAS</a>
                 </div>
 
                 <div class="menu-main-all-itens">
-                    <div class="itens-menu" id="button_main_1">
+                    <div class="itens-menu" id="list-itens-1">
                         <h1>helo word</h1>
                     </div>
 
-                    <div class="itens-menu" id="button_main_2">
+                    <div class="itens-menu" id="list-itens-2">
                         <h1>item 2</h1>
                     </div>
+
+                    <div class="itens-menu" id="list-itens-3">
+                        <h1>item 2</h1>
+                    </div>
+
+                    <div class="itens-menu" id="list-itens-4">
+                        <h1>item 2</h1>
+                    </div>                    
                 </div>                
             </div>
         </div>
     </header>
-
+    
     <script>
-
-        $(".button-main").on({
+        $(".button-main").on({              
             "mouseover" : function() {
-                $('#' + $(this).attr('for')).addClass("main-menu-active");
-            },
+                $('#' + $(this).attr('list')).addClass("main-menu-active");
+            },  
+            
             "mouseout" : function() {               
-                $('#' + $(this).attr('for')).removeClass("main-menu-active");
-            }
+                $('#' + $(this).attr('list')).removeClass("main-menu-active");
+            } 
         });
+
+        $(".itens-menu").on({ 
+            "mouseover" : function() {
+                if(!$(this).is(".main-menu-active")){
+                    $(this).addClass("main-menu-active");
+                }; 
+                $('[list="' + $(this).attr('id') + '"]').addClass("main-menu-button-active");                
+            },
+            "mouseout" : function() {  
+                $(this).removeClass("main-menu-active");      
+                $('[list="' + $(this).attr('id') + '"]').removeClass("main-menu-button-active");                 
+            }     
+        });     
     </script>
 
 </body>
