@@ -303,19 +303,21 @@ header .line-separator{
 }
 
 .button-main:hover{
-    background: white;
+    z-index: 100;
+    background: #fff;
     color: var(--secondary-color);   
-    border-top: 1px solid rgba(163, 163, 163, 0.568); 
-    border-left: 1px solid rgba(163, 163, 163, 0.568); 
-    border-right: 1px solid rgba(163, 163, 163, 0.568);   
+    border-top: 1px solid rgba(185, 185, 185, 0.568); 
+    border-left: 1px solid rgba(185, 185, 185, 0.568); 
+    border-right: 1px solid rgba(185, 185, 185, 0.568);   
 }
 
 .main-menu-button-active{    
-    background: white !important;
+    z-index: 100;
+    background: #fff!important;
     color: var(--secondary-color) !important;   
-    border-top: 1px solid rgba(163, 163, 163, 0.568) !important; 
-    border-left: 1px solid rgba(163, 163, 163, 0.568) !important; 
-    border-right: 1px solid rgba(163, 163, 163, 0.568) !important;   
+    border-top: 1px solid rgba(185, 185, 185, 0.568) !important; 
+    border-left: 1px solid rgba(185, 185, 185, 0.568) !important; 
+    border-right: 1px solid rgba(185, 185, 185, 0.568) !important;   
 }
 
 .menu-main-btn-offers{
@@ -328,30 +330,35 @@ header .line-separator{
 .main-menu-active{    
     display: block !important;
     width: 100%;
+    max-width: 1270px;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
     margin: auto;
     background: #fff;
-    border: 1px solid #e8e8e8;
+    border: 1px solid rgba(185, 185, 185, 0.568);
+    border-top: none;
     padding: 8px;
-    box-shadow: 0 8px 5px 0 rgb(0 0 0 / 46%);
+    box-shadow: 0px 3px 8px 0 rgb(0 0 0 / 46%);
+    border-radius: 0px 0px 2px 2px;
 }
 
 .itens-menu{
     display: none;
-    /* display: block !important;
-    width: 100%;
+    /* width: 100%;
+    max-width: 1270px;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
     margin: auto;
     background: #fff;
-    border: 1px solid #e8e8e8;
+    border: 1px solid rgba(185, 185, 185, 0.568);
+    border-top: none;
     padding: 8px;
-    box-shadow: 0 8px 5px 0 rgb(0 0 0 / 46%); */
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%);
+    border-radius: 0px 0px 2px 2px; */
 }
 
 /* end header */
