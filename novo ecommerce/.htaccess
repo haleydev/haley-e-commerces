@@ -1,0 +1,12 @@
+# Nao modifique este arquivo por questoes de seguranca
+Options All -Indexes
+RewriteEngine On
+
+# Encaminhe todas as outras solicitações
+RewriteRule (.*) Public/$1 [L,QSA]
+
+# Segurança adicional para arquivos que começando com .
+<files ".*">
+order allow,deny
+deny from all
+</files>

@@ -1,0 +1,20 @@
+{
+    "description": "E-commerce Haley",
+    "authors": [
+        {
+            "name": "Warley Rodrigues",
+            "email": "haleytrader@hotmail.com"             
+        }
+    ],
+    "autoload": {
+        "psr-4": {            
+            "Core\\": "Core/", 
+            "Model\\": "Model/",
+            "Controller\\": "Controller/"           
+        }
+    },
+    
+    "require": {
+       
+    }
+}
