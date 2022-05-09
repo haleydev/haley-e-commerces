@@ -312,6 +312,12 @@ header .line-separator{
 
 .main-menu-active{    
     display: block !important;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .itens-menu{
