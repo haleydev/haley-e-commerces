@@ -310,6 +310,13 @@ header .line-separator{
     border-right: 1px solid rgba(163, 163, 163, 0.568);   
 }
 
+.menu-main-btn-offers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .main-menu-active{    
     display: block !important;
     width: 100%;
