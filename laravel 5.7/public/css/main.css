@@ -267,8 +267,6 @@ header .line-separator{
     font-size: 14px;
     font-weight: bolder !important;   
     color: white !important;    
-    /* width: 20px;
-    height: 20px; */
     padding: 2px 5px;
     border-radius: 50%;
     background: var(--secondary-color) !important;
@@ -276,8 +274,48 @@ header .line-separator{
 
 .header-s3{
     width: 100%;
-    height: 60px;
+    justify-content: center;
+    align-items: center;   
     background: var(--primary-color);
+}
+
+.main-menu{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.main-menu a{ 
+    width: 100%;   
+    padding: 16px 0px;  
+    text-align: center;
+    text-decoration: none;
+    color: #555;   
+    font-weight: bold;  
+    font-size: 14px;
+    border-top: 1px solid transparent; 
+    border-left: 1px solid transparent; 
+    border-right: 1px solid transparent;    
+}
+
+.main-menu a:hover{    
+    background: white;
+    color: var(--secondary-color);   
+    border-top: 1px solid rgba(163, 163, 163, 0.568); 
+    border-left: 1px solid rgba(163, 163, 163, 0.568); 
+    border-right: 1px solid rgba(163, 163, 163, 0.568);   
+}
+
+.main-menu-active{    
+    display: block !important;
+}
+
+.itens-menu{
+    display: none;
 }
 
 /* end header */
